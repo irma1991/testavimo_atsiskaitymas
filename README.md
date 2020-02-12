@@ -1,1 +1,0 @@
-# testavimo_atsiskaitymas

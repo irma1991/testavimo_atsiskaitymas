@@ -7,12 +7,34 @@ public class SeleniumTest {
     public void setup(){
         Selenium.setup();
     }
+
     @Test
-        public void searchByKeywordTest(){
-        Selenium.searchByKeyword("Baranauskas");
+        public void addRecordTest() {
+        Selenium.addRecord("Daktaras miegas","Mistinis","Mike Flanagan");
     }
-    @AfterTest
-    public void close(){
-        Selenium.close();
+
+    @Test
+        public void notValidRecordTest() {
+        Selenium.notValidRecord("<p>","<h1>","/.[}");
     }
+
+    @Test
+    public void deleteRecordTest() {
+        Selenium.deleteRecord("699");
+    }
+
+    @Test
+    public void updateRecordTest() {
+        Selenium.updateRecord("87","Spider87","Komedija","Irma");
+    }
+
+    @Test
+    public void notValidRecordUpdateTest() {
+        Selenium.notValidRecordUpdate("87","<p>Spider87</p>","'{}-=}'","<h2>Irma</h2>");
+    }
+
+    // @AfterTest
+    // public void close(){
+        //Selenium.close();
+    //}
 }

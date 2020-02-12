@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Selenium" />
         <module name="selenium2" />
+        <module name="SeleniumTesting" />
+        <module name="TestavimoTask" />
         <module name="selenium-master" />
       </profile>
     </annotationProcessing>
