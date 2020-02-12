@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Selenium" />
-        <module name="selenium2" />
-        <module name="SeleniumTesting" />
-        <module name="TestavimoTask" />
         <module name="selenium-master" />
+        <module name="testavimo_atsiskaitymas" />
+        <module name="TestavimoTask" />
+        <module name="SeleniumTesting" />
+        <module name="selenium2" />
+        <module name="Selenium" />
       </profile>
     </annotationProcessing>
   </component>

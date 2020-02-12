@@ -20,7 +20,7 @@ public class SeleniumTest {
 
     @Test
     public void deleteRecordTest() {
-        Selenium.deleteRecord("699");
+        Selenium.deleteRecord("725");
     }
 
     @Test

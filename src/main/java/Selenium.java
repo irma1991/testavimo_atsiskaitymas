@@ -41,6 +41,7 @@ public class Selenium {
         directorField.sendKeys(keyword3);
         WebElement submitField = browser.findElement(By.name("insert"));
         submitField.click();
+        WebElement message = browser.findElement(By.className("msg-bad"));
 
     }
     public static void deleteRecord(String keyword){
@@ -48,6 +49,7 @@ public class Selenium {
         idField.sendKeys(keyword);
         WebElement deleteField = browser.findElement(By.name("delete"));
         deleteField.click();
+        WebElement message = browser.findElement(By.className("msg-good"));
 
     }
     public static void updateRecord(String keyword, String keyword2, String keyword3, String keyword4){
@@ -61,6 +63,7 @@ public class Selenium {
         directorField.sendKeys(keyword4);
         WebElement updateField = browser.findElement(By.name("update"));
         updateField.click();
+        WebElement message = browser.findElement(By.className("msg-good"));
 
     }
     public static void notValidRecordUpdate(String keyword, String keyword2, String keyword3, String keyword4){
@@ -74,6 +77,7 @@ public class Selenium {
         directorField.sendKeys(keyword4);
         WebElement updateField = browser.findElement(By.name("update"));
         updateField.click();
+        WebElement message = browser.findElement(By.className("msg-bad"));
 
     }
 
